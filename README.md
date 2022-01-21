@@ -1,7 +1,7 @@
 # Bacterial_Pathogens_GENRE_Database
 fluxsampling.py usage
-fluxsampling.py takes all .sbml files in a folder, samples flux for all sbml files, performs NMDS,
-#and clusters data based on gram status, pathogen name, aerobe status.
+fluxsampling.py takes all .sbml files in a folder, samples flux for all sbml files, performs NMDS, 
+and clusters data based on gram status, pathogen name, aerobe status.
 
 NOTE: .sbml files MUST take on the name format as follows
       genus_species.feature_protien.sbml

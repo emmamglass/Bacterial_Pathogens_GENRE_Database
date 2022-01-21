@@ -10,11 +10,11 @@ NOTE: .sbml files MUST take on the name format as follows: genus_species.feature
 ### required inputs: --cluster_type, --sample_size
 
 #### --cluster_type
-what you would like to color clusters by. options include: 'gram', 'pathogen', 'aerobic'
+What you would like to color clusters by. options include: 'gram', 'pathogen', 'aerobic'
 
 NOTE: the --cluster_type pathogen input is TEMPORARILY non-functional if you do not have a specific subset of bacterial species
 
 #### --sample_size
-how mnay flux samples would you like to take for a given reconstruction (default is 500)
+How many flux samples would you like to take for a given reconstruction (default is 500)
 
 

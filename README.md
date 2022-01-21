@@ -7,7 +7,7 @@ fluxsampling.py takes all .sbml files in a folder, samples flux for all sbml fil
 NOTE: .sbml files MUST take on the name format as follows: genus_species.feature_protien.sbml
 
 
-### required inputs: --cluster_type, --sample_size
+### required inputs:
 
 #### --cluster_type
 What you would like to color clusters by. options include: 'gram', 'pathogen', 'aerobic'

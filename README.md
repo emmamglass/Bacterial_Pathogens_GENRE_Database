@@ -17,4 +17,8 @@ NOTE: the --cluster_type pathogen input is TEMPORARILY non-functional if you do 
 #### --sample_size
 How many flux samples would you like to take for a given reconstruction (default is 500)
 
+## fastaextractor.py usage
+
+fastaextractor.py takes a file called output.fasta that contains protein fasta sequences of all strains. Then, it separates the output.fasta into individual fasta files based on genomeid in the form of genomeid.fa. 
+
 

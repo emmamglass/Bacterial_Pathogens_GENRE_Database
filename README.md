@@ -1,4 +1,4 @@
-# Bacterial_Pathogens_GENRE_Database
+# PATHGENN_project
 
 ## fluxsampling.py usage
 
@@ -99,6 +99,14 @@ k20.py is not a very useful program. pay it no mind
 ## metabolicphylogeny.py usage
 
 metabolicphylogeny.py reads all .sbml in the folder and then can perform a variety of tasks. It will make a list of all present reactions across the models. The 'panreactome'. Then, it will make an empty dataframe based on the columns being the panreactome, and the rows being the taxids for each strain. Additionally, it will populate the dataframe with 1s or 0s based on if a given reaction is present in a given strain. Then, it can calculate the jaccard distance between two pairs of pathobionts, and create a pairwise similarity dataframe. Additionally, it can create a reaction presence heatmap, perform nmds on reaction presence, and finally, perform kmenas clustering.
+
+## quickflux.py usage
+
+This program is used to perform Flux sampling on all models in a folder. The sampling method incorporates gapsplit.py function by Paul Jensen's group. This program is meant to run on the UVA supercomputer rivanna.
+
+## reactionannotationfig.py usage
+
+reactionannotationfig.py creates a figure based on the reaction annotations for each model in PATHGENN. Additionally, it bins reaction annotations according to peripheral and universal metabolism categories. This creates figure 2e in the PATHGENN paper
 
 
 

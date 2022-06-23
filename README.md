@@ -43,7 +43,7 @@ NMDS.py uses isolation source data, phylum data, class data, and taxid data, and
 
 ## Reaction_annotations.py usage
 
-Reaction_annotations.py takes a list of species specific essential genes and converts them into KEGG orthologs by interfacing with KEGG. If a given essential gene is not found in the KEGG database, 
+Reaction_annotations.py takes a list of species specific genes and converts them into KEGG orthologs by interfacing with KEGG. If a given essential gene is not found in the KEGG database, NA will be inserted in its place.
 
 
 

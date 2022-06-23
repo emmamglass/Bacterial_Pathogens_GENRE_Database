@@ -108,8 +108,26 @@ This program is used to perform Flux sampling on all models in a folder. The sam
 
 reactionannotationfig.py creates a figure based on the reaction annotations for each model in PATHGENN. Additionally, it bins reaction annotations according to peripheral and universal metabolism categories. This creates figure 2e in the PATHGENN paper
 
+## reconstruct_emg.py usage
+
+This file is part of the reconstructor algorithm but I have modified it slightly to work on my computer. the diamond executable did not work correctly for me, so this file calls the diamond program directly from the command line rather than relying on the executable.
+
+## rxnsgenesmetabol.py usage
+
+To be honest I'm not sure exactly how this program is any different from genesrxnmetabolitesfig.py. I'll figure that out later
+
+## rxnpres.py usage
+
+Not sure exactly what the difference between this program and another similar one above is. Probably one of them works and one of them doesn't. I'll look into this.
 
 
+## straindata.py usage
+
+This creates barplots based on the metadata associated with each strain in PATHGENN.
+
+## strainselector.py usage
+
+This program selected the strains that are used to create models in PATHGENN based on a hierarchical criteron. 
 
 
 

@@ -45,8 +45,60 @@ NMDS.py uses isolation source data, phylum data, class data, and taxid data, and
 
 Reaction_annotations.py takes a list of species specific genes and converts them into KEGG orthologs by interfacing with KEGG. If a given essential gene is not found in the KEGG database, NA will be inserted in its place.
 
+## essentialgenes.py usage
+
+This is an UNFINISHED program to determine the essential genes across all pathobionts in PATHGENN. Will work on uploading a newer version.
+
+## fastaextractor.py usage
+
+This program takes the input as a .fasta file with ALL geome annotations in the singular .fasta file. This program then separates each individual annotated genome .fasta file into its own file with the title as it's NCBI taxid. 
 
 
+## flux_sampling_rivanna.py usage
+
+This program performs flux sampling for all models in a given folder. This version was used on the UVA supercomputer system Rivanna.
+
+## fluxjobcreator.py usage
+
+This program writes a .slurm job to be used on the supercomputer. It creates paralell processes for flux sampling of each model. This can be added to a .slurm script. 
+
+
+## fluxsampling_pseudomonas.py usage
+
+This program was adapted from fluxsampling.py above to be used specifically on pseudomonas aeruginosa isolates. This was used as part of a project in one of my classes.
+
+
+## gapsplit.py usage
+
+This program was NOT written by me. This program was created in Paul Jensen's group and is used for more efficient and better flux sampling. It is necessary to contain in this folder since many programs in this folder utilize this tool.
+
+## gene_to_KO.py usage
+
+gene_to_KO.py usage converts KEGG genes to KO values. 
+
+## genesrxnmetabolitesfig.py usage
+
+genesrxnsmetabolitesfig.py takes an input called phyluminfo.csv which contains taxonomic class information, and the number of genes, metabolites, and reactions in each model. This program then creates a sereies of boxplots that describe the number and range of genes reactions and metabolites in each PATHGENN model.
+
+## genome_features.py usage
+
+genome_features.py takes an input of PATRIC genome ids in a .txt file and annotates each genome using the RAST annotation server. The result is one .fasta file containing annotations for each genome, which then can be separated using fastaextractor.py
+
+## genome_features_dna.py usage
+
+genome_features_dna.py takes an input of PATRIC genome ids in a .txt file and annotates the rRNA sequences of each genome using the RAST annotation server. This can be used to annotate the genome for 16s rRNA sequences
+
+## gettaxonomy.py usage
+
+geettaxonomy.py takes an input of NCBI taxids and gets their specified taxonomy information. Then it saves that information to a .csv file
+
+## k20.py usage 
+
+k20.py is not a very useful program. pay it no mind
+
+## metabolicphylogeny.py usage
+
+metabolicphylogeny.py reads all .sbml in the folder and then can perform a variety of tasks. It will make a list of all present reactions across the models. The 'panreactome'. Then, it will make an empty dataframe based on the columns being the panreactome, and the rows being the taxids for each strain. Additionally, it will populate the dataframe with 1s or 0s based on if a given reaction is present in a given strain. Then, it can calculate the jaccard distance between two pairs of pathobionts, and create a pairwise similarity dataframe. Additionally, it can create a reaction presence heatmap, perform nmds on reaction presence, and finally, perform kmenas clustering.
 
 
 
